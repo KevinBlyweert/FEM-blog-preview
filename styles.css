@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+    font-size: 16px;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 320px;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid black;
+
+    #card_img {
+        border-radius: 10px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #card_tag {
+        width: fit-content;
+        padding: 5px 10px;
+        background-color: hsl(47, 88%, 63%);
+        font-size: small;
+        font-weight: bold;
+        border-radius: 6px;
+    }
+
+    #card_date {
+        font-size: smaller;
+    }
+
+    #card_title {
+        font-size: 20px;
+
+        &:hover {
+            cursor: pointer;
+            color: hsl(47, 88%, 63%);
+        }
+    }
+
+    #card_text {
+        color: #666;
+    }
+
+    #card_author {
+        height: 30px;
+        font-weight: bold;
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+            height: 100%;
+            margin-right: 20px;
+        }
+    }
+}
