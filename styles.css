@@ -29,7 +29,7 @@ body {
     border-radius: 20px;
     padding: 20px;
     border: 1px solid black;
-
+    box-shadow: 10px 10px 0 black;
     #card_img {
         border-radius: 10px;
         width: 100%;
