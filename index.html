@@ -7,6 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,10 +18,13 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
-      font-size: 8px;
+      font-size: .5rem;
       text-align: center;
       margin-top: 10px;
-      a{font-size: 8px;}
+
+      a {
+        font-size: 8px;
+      }
     }
 
     .attribution a {
@@ -31,19 +35,26 @@
 
 <body>
 
-  <div class="card">
-    <img src="./assets/images/illustration-article.svg" alt="Card illustration" id="card_img">
-    <span id="card_tag">Learning</span>
-    <p id="card_date">Published 21 Dec 2023</p>
-    <h1 id="card_title">HTML &amp; CSS foundations</h1>
-    <p id="card_text">These languages are the backbone of every website, defining structure, content, and presentation.</p>
-    <div id="card_author"><img src="./assets/images/image-avatar.webp" alt="Author pic" id="author_pic">Greg Hooper</div>
-  </div>
+  <main>
+    <div class="card">
+      <img src="./assets/images/illustration-article.svg" alt="Card illustration" class="card_img">
+      <p class="tag">Learning</p>
+      <p class="card_date">Published <time datetime="2023-12-21">21 Dec 2023</time></p>
+      <h1 class="card_title"><a href="">HTML &amp; CSS foundations</a></h1>
+      <p class="card_text">These languages are the backbone of every website, defining structure, content, and
+        presentation.</p>
+      <div class="card_author"><img src="./assets/images/image-avatar.webp" alt="Author pic" id="author_pic">
+        <p>Greg Hooper</p>
+      </div>
+    </div>
+  </main>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="attribution">
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">K3V</a>.
+    </p>
+  </footer>
 </body>
 
 </html>
